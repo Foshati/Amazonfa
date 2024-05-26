@@ -9,7 +9,7 @@ export type ProductType = {
   description: string;
   category: string;
   rating: number;
-  numberReviews: number;
+  numReviews: number;
   countInStock: number;
   colors?: [];
   sizes?: [];
