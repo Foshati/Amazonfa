@@ -76,8 +76,10 @@ function Header() {
                             </li>
                         </ul>
                     </div>
+                    {/* logo project */}
                     <Shirt className="m-3 text-yellow-500 size-7" />
                 </div>
+                {/* navbar-center */}
                 <div className="hidden navbar-center lg:flex">
                     <ul className="px-1 menu menu-horizontal">
                         <li className="hover:text-red-500">
