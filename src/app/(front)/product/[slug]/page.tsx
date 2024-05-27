@@ -6,6 +6,7 @@ export default function ProductDetails({ params, }: { params: { slug: string } }
     if (!productDetails) {
         return <div>Product not found</div>
     }
+    const blurDataURL = "data:image/webp;base64,UklGRs4CAABXRUJQVlA4WAoAAAAgAAAAnwAAnwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg4AAAADAMAJ0BKqAAoAA+7W6vVamlo6MhVAoRMB2JaW7dfv8bCEAAMwAwZByNKo25AdWm9U5eWlb3lx2DeDHc08kWakPJypzwdLPfsyljoFVJap3tKBLFBxVPUzf3Jsv7DvlpVzPu/kdV+n93e4AA/u2wiuTEhisVj9cNacazgpJ+TJzOLMFE8rUdoapAeblQ4w6R1h2+EMvtvTy+FfiUQZGYFhj9XYydgqpxbB3mNxe2ScxNrKhUJTszxqNvbIIDVxQKXo6Ls2EFyM4vQ8QEYLNaCzlYigICXk+4huKejb/2QAAA";
     return (
         <div>
             <>
@@ -14,10 +15,12 @@ export default function ProductDetails({ params, }: { params: { slug: string } }
                         <div className="lg:w-4/5 mx-auto flex flex-wrap">
                             <Image
                                 alt={productDetails.name}
-                                className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                className="h-auto mx-auto sm:w-2/5 lg:w-1/2 object-cover object-center rounded "
                                 src={productDetails.image}
                                 width={256}
                                 height={256}
+                                placeholder='blur'
+                                blurDataURL={blurDataURL}
                             />
                             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <h2 className="text-sm title-font text-gray-500 tracking-widest">
@@ -125,7 +128,7 @@ export default function ProductDetails({ params, }: { params: { slug: string } }
                                     </span>
                                 </div>
                                 <p className="leading-relaxed">
-                                    {productDetails.description}
+                                    {productDetails.description2}
                                 </p>
                                 <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                                     <div className="flex">

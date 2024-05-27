@@ -11,6 +11,8 @@ const data = {
       numReviews: 8,
       countInStock: 20,
       description: "A popular shirt",
+      description2:
+        "The Free Shirt is crafted from high-quality materials to provide exceptional comfort. Its versatile design makes it suitable for both casual and semi-formal occasions. This shirt is designed to last, maintaining its shape and color after multiple washes.",
       isFeatured: true,
       banner: "/images/banner1.jpg",
     },
@@ -25,6 +27,8 @@ const data = {
       numReviews: 10,
       countInStock: 20,
       description: "A popular shirt",
+      description2:
+        "The Fit Shirt by Adidas combines style and comfort effortlessly. With its modern fit, it enhances your silhouette while ensuring freedom of movement. Perfect for active days or casual outings, this shirt is a must-have in your wardrobe.",
       isFeatured: true,
       banner: "/images/banner2.jpg",
     },
@@ -39,6 +43,8 @@ const data = {
       numReviews: 3,
       countInStock: 20,
       description: "A popular shirt",
+      description2:
+        "The Slim Shirt from Raymond offers a sleek and tailored look, ideal for professional settings or formal events. Made from breathable fabric, it ensures you stay cool and comfortable all day long. Its sophisticated design makes it a timeless piece.",
     },
     {
       name: "Golf Pants",
@@ -51,6 +57,8 @@ const data = {
       numReviews: 13,
       countInStock: 20,
       description: "Smart looking pants",
+      description2:
+        "Oliver's Golf Pants are designed for both style and performance. Featuring a comfortable fit, they allow for a full range of motion, perfect for the golf course or casual wear. The durable fabric resists wrinkles and maintains a sharp look.",
     },
     {
       name: "Fit Pants",
@@ -63,6 +71,8 @@ const data = {
       numReviews: 7,
       countInStock: 20,
       description: "A popular pants",
+      description2:
+        "Fit Pants by Zara are known for their contemporary design and exceptional comfort. The slim fit accentuates your legs while providing ample flexibility. These pants are perfect for both work and weekend outings, offering a polished appearance.",
     },
     {
       name: "Classic Pants",
@@ -75,6 +85,8 @@ const data = {
       numReviews: 14,
       countInStock: 20,
       description: "A popular pants",
+      description2:
+        "Casely's Classic Pants bring a touch of elegance to any outfit. Made with premium materials, they ensure durability and comfort throughout the day. The timeless design makes them suitable for various occasions, from business meetings to casual gatherings.",
     },
   ],
 };
