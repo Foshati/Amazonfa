@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function ProductItem({ product }: { product: ProductType }) {
+    const blurDataURL = "data:image/webp;base64,UklGRs4CAABXRUJQVlA4WAoAAAAgAAAAnwAAnwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDgg4AAAADAMAJ0BKqAAoAA+7W6vVamlo6MhVAoRMB2JaW7dfv8bCEAAMwAwZByNKo25AdWm9U5eWlb3lx2DeDHc08kWakPJypzwdLPfsyljoFVJap3tKBLFBxVPUzf3Jsv7DvlpVzPu/kdV+n93e4AA/u2wiuTEhisVj9cNacazgpJ+TJzOLMFE8rUdoapAeblQ4w6R1h2+EMvtvTy+FfiUQZGYFhj9XYydgqpxbB3mNxe2ScxNrKhUJTszxqNvbIIDVxQKXo6Ls2EFyM4vQ8QEYLNaCzlYigICXk+4huKejb/2QAAA";
     return (
         <div className='flex gap-4 items-center justify-center '>
             <div className="card w-96 bg-black shadow-xl relative bg-opacity-90">
@@ -14,7 +15,9 @@ export default function ProductItem({ product }: { product: ProductType }) {
                         alt={product.slug}
                         width={500}
                         height={500}
-                        className="object-cover pointer-events-none "
+                        className="object-cover pointer-events-none"
+                        placeholder='blur'
+                        blurDataURL={blurDataURL}
 
                     />
                     <div className=" hidden lg:card-actions justify-center absolute bottom-4 left-1/2   text-[#272A2D] ">
